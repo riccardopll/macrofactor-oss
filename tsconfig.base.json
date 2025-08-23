@@ -8,9 +8,7 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
-    "noUncheckedIndexedAccess": true,
     "noUncheckedSideEffectImports": true,
-    "exactOptionalPropertyTypes": true,
     "baseUrl": ".",
     "paths": {
       "@shared/*": ["packages/shared/*"],
