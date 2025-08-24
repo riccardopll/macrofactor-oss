@@ -1,9 +1,16 @@
 import { Hono } from "hono";
+import { cors } from "hono/cors";
 
-const app = new Hono();
+type Env = {
+  DB: D1Database;
+};
 
-app.get("/", (c) => {
-  return c.text("Hello Hono!");
+const app = new Hono<{ Bindings: Env }>();
+
+app.use("/*", cors());
+
+app.get("/", (context) => {
+  return context.json({ message: "Hello, World!" });
 });
 
 export default app;

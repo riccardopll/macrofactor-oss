@@ -8,12 +8,6 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
-    "noUncheckedSideEffectImports": true,
-    "baseUrl": ".",
-    "paths": {
-      "@shared/*": ["packages/shared/*"],
-      "@db/*": ["packages/db/*"],
-      "@trpc/*": ["packages/trpc/*"]
-    }
+    "noUncheckedSideEffectImports": true
   }
 }

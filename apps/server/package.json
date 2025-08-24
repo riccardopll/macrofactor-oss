@@ -4,18 +4,25 @@
   "type": "module",
   "scripts": {
     "cf-typegen": "wrangler types --env-interface CloudflareBindings",
-    "deploy": "wrangler deploy --minify",
+    "cf:deploy": "wrangler deploy --minify",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
     "dev": "wrangler dev",
-    "test": "vitest --run",
-    "lint": "prettier . --write"
+    "lint": "prettier . --write",
+    "test": "vitest --run"
   },
   "dependencies": {
-    "hono": "^4.9.4"
+    "@trpc/server": "11.5.0",
+    "dotenv": "17.2.1",
+    "drizzle-orm": "0.44.4",
+    "hono": "4.9.4",
+    "nanoid": "5.1.5"
   },
   "devDependencies": {
-    "@cloudflare/vitest-pool-workers": "^0.8.66",
-    "@cloudflare/workers-types": "^4.20250823.0",
-    "vitest": "^3.2.4",
-    "wrangler": "^4.32.0"
+    "@cloudflare/vitest-pool-workers": "0.8.66",
+    "@cloudflare/workers-types": "4.20250823.0",
+    "drizzle-kit": "0.31.4",
+    "vitest": "3.2.4",
+    "wrangler": "4.32.0"
   }
 }

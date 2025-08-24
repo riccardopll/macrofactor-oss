@@ -1,6 +1,14 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
+  "$schema": "../../node_modules/wrangler/config-schema.json",
   "name": "macrofactor-oss-server",
   "main": "src/index.ts",
   "compatibility_date": "2025-08-16",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "macrofactor-oss-db",
+      "database_id": "ffe034c3-0d79-4dd9-9270-30e489fb103f",
+      "migrations_dir": "drizzle",
+    },
+  ],
 }

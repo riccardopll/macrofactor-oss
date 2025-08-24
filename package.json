@@ -1,15 +1,20 @@
 {
   "name": "macrofactor-oss",
-  "version": "1.0.0",
   "private": true,
   "description": "",
   "keywords": [],
-  "license": "ISC",
-  "author": "",
-  "main": "index.js",
+  "license": "MIT",
+  "author": "Riccardo Palleschi",
+  "scripts": {
+    "lint": "pnpm -r lint"
+  },
+  "dependencies": {
+    "zod": "4.1.1"
+  },
   "devDependencies": {
-    "prettier": "^3.6.2",
-    "typescript": "^5.9.2"
+    "prettier": "3.6.2",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2"
   },
   "packageManager": "pnpm@10.15.0"
 }
