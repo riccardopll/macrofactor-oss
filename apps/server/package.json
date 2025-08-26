@@ -12,11 +12,11 @@
     "test": "vitest --run"
   },
   "dependencies": {
+    "@macrofactor-oss/api": "workspace:*",
     "@trpc/server": "11.5.0",
     "dotenv": "17.2.1",
     "drizzle-orm": "0.44.4",
-    "hono": "4.9.4",
-    "nanoid": "5.1.5"
+    "hono": "4.9.4"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "0.8.66",

@@ -5,7 +5,9 @@
   "keywords": [],
   "license": "MIT",
   "author": "Riccardo Palleschi",
+  "type": "module",
   "scripts": {
+    "build": "pnpm -r build",
     "lint": "pnpm -r lint"
   },
   "dependencies": {

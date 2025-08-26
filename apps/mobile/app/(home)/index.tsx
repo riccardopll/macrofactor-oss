@@ -1,9 +1,14 @@
 import { useUser } from "@clerk/clerk-expo";
 import { Text, View, StyleSheet } from "react-native";
 import SignOutButton from "@/app/components/SignOutButton";
+import { trpc } from "../trpc";
 
 export default function HomePage() {
   const { user } = useUser();
+  const foodQuery = trpc.foodList.useInfiniteQuery(
+    { limit: 20 },
+    { getNextPageParam: (last) => last.nextCursor },
+  );
   return (
     <View style={styles.container}>
       <View style={styles.content}>
